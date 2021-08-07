@@ -26,7 +26,7 @@ class Meetup(models.Model):
 	description = models.TextField()
 	image = models.ImageField(upload_to='images')
 	location = models.ForeignKey(Location,on_delete=CASCADE)
-	participant = models.ManyToManyField(Participant, blank=True, null=True)
+	participant = models.ManyToManyField(Participant, blank=True)
 
 
 	def __str__(self):
