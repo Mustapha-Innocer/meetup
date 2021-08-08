@@ -1,1 +1,1 @@
-web: gunicorn meetups.wsgi --log-file -
+web: gunicorn meetups.wsgi
